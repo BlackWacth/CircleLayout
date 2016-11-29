@@ -348,7 +348,6 @@ public class CircleLayout extends ViewGroup implements View.OnClickListener{
     private class MGestureListener extends GestureDetector.SimpleOnGestureListener {
         @Override
         public boolean onSingleTapUp(MotionEvent e) {
-
             mTappedViewPosition = pointToPosition(e.getX(), e.getY());
             Logger.i("mTappedViewPosition = %d, x = %f, y = %f", mTappedViewPosition, e.getX(), e.getY());
             if(mTappedViewPosition >= 0) {
@@ -356,12 +355,13 @@ public class CircleLayout extends ViewGroup implements View.OnClickListener{
                 mTappedVeiw.setPressed(true);
             }
             if(mTappedVeiw != null) {
-                if(mTappedVeiw instanceof CircleView) {
+                if(mTappedVeiw instanceof CircleView && mTappedViewPosition != getChildCount() - 1) {
                     CircleView view = (CircleView) mTappedVeiw;
-//                    if(mSelected == mTappedViewPosition) {
-//
-//                    }
-                    view.toggle();
+                    Logger.i("id = %d", view.getId());
+                    check(view.getId());
+//                    view.toggle();
+                } else  {
+                    showAndHide();
                 }
                 return true;
             }

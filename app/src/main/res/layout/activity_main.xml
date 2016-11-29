@@ -20,48 +20,56 @@
         android:layout_centerInParent="true">
 
         <com.bruce.circlelayout.widgets.CircleView
+            android:id="@+id/circle_view00"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:bgIcon="@color/md_red_400"
             app:checkIcon="@drawable/check_animated_vector"/>
 
         <com.bruce.circlelayout.widgets.CircleView
+            android:id="@+id/circle_view01"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:bgIcon="@color/md_purple_400"
             app:checkIcon="@drawable/check_animated_vector"/>
 
         <com.bruce.circlelayout.widgets.CircleView
+            android:id="@+id/circle_view02"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:bgIcon="@color/md_indigo_400"
             app:checkIcon="@drawable/check_animated_vector"/>
 
         <com.bruce.circlelayout.widgets.CircleView
+            android:id="@+id/circle_view03"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:bgIcon="@color/md_blue_400"
             app:checkIcon="@drawable/check_animated_vector"/>
 
         <com.bruce.circlelayout.widgets.CircleView
+            android:id="@+id/circle_view04"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:bgIcon="@color/md_cyan_400"
             app:checkIcon="@drawable/check_animated_vector"/>
 
         <com.bruce.circlelayout.widgets.CircleView
+            android:id="@+id/circle_view05"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:bgIcon="@color/md_teal_400"
             app:checkIcon="@drawable/check_animated_vector"/>
 
         <com.bruce.circlelayout.widgets.CircleView
+            android:id="@+id/circle_view06"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:bgIcon="@color/md_green_400"
             app:checkIcon="@drawable/check_animated_vector"/>
 
         <com.bruce.circlelayout.widgets.CircleView
+            android:id="@+id/circle_view07"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:bgIcon="@color/md_lime_400"
